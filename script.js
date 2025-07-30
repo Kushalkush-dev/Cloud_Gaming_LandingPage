@@ -56,7 +56,7 @@ var tl=gsap.timeline({
     start:"top 20%",
     end:"top 0%",
     markers:true,
-    scrub:3
+    scrub:2
   }
 
 })
