@@ -33,3 +33,39 @@ ScrollTrigger.refresh();
 
 
 locomotiveScrollInit()
+
+/*var tl=gsap.timeline({
+  scrollTrigger:{
+    trigger:"#main page1",
+    scroller:"#main",          //alternative trigger based on page
+    start:"20% 20%",
+    end:"20% 0%",
+    markers:true,
+    scrub:2
+  }
+
+})*/
+
+
+var tl=gsap.timeline({
+  scrollTrigger:{
+    trigger:"#main h1",
+    scroller:"#main",
+    start:"top 20%",
+    end:"top 0%",
+    markers:true,
+    scrub:2
+  }
+
+})
+
+tl.to("#main h1",{
+  x:-100
+},"head")
+tl.to("#main h2",{
+  x:100
+},"head")
+
+tl.to("#main video",{
+  width:"95%"
+},"head")
