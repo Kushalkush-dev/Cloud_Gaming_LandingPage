@@ -1,3 +1,42 @@
 @import "tailwindcss";
 
 
+@font-face {
+  font-family: 'ProductSans';
+  src: url('/fonts/PTSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ProductSansB';
+  src: url('/fonts/PTSans-Bold.ttf');
+}
+
+
+
+@font-face {
+  font-family: 'PPMori';
+  src: url('../fonts/PPMori-SemiBold.otf');
+}
+
+@theme{
+  --font-PPMori:PPMori,"sans-serif"
+}
+
+
+@theme{
+  --font-PtSans:ProductSans , "sans-serif"
+  
+}
+
+
+@theme{
+  --font-PtSansB:ProductSansB , "sans-serif"
+  
+}
+
+
+@layer components{
+  .navStyle{
+    @apply text-white font-PPMori
+  }
+}
