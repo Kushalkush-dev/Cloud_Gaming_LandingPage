@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -161,6 +162,12 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .z-50 {
+    z-index: 50;
+  }
   .-mt-\[3px\] {
     margin-top: calc(3px * -1);
   }
@@ -194,11 +201,26 @@
   .mt-\[7vw\] {
     margin-top: 7vw;
   }
+  .mt-\[10vh\] {
+    margin-top: 10vh;
+  }
   .mt-\[10vw\] {
     margin-top: 10vw;
   }
+  .mt-\[15vh\] {
+    margin-top: 15vh;
+  }
+  .mt-\[17vh\] {
+    margin-top: 17vh;
+  }
   .mt-\[20vh\] {
     margin-top: 20vh;
+  }
+  .mt-\[50vh\] {
+    margin-top: 50vh;
+  }
+  .mt-\[150vh\] {
+    margin-top: 150vh;
   }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
@@ -230,6 +252,9 @@
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -251,9 +276,15 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
   }
   .bg-black {
     background-color: var(--color-black);
