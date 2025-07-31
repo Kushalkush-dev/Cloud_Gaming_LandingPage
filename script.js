@@ -61,7 +61,7 @@ var tl=gsap.timeline({
     scroller:"#main",
     start:"50% 20%",
     end:"50% 0%",
-    markers:true,
+    markers:false,
     scrub:2
   }
 
@@ -96,4 +96,31 @@ var tl2=gsap.timeline({
 
 tl2.to("#page2",{
   backgroundColor:"#fff"
+})
+
+
+
+
+
+var tl3=gsap.timeline({
+  scrollTrigger:{
+    trigger:"#page2",
+    scroller:"#main",
+    start:"bottom 50%",
+    end:"bottom 40%",
+    markers:true,
+    scrub:2
+  }
+
+})
+
+
+tl3.to("#page3",{
+  backgroundColor:"#000"
+})
+
+
+tl3.from("#page3 img",{
+  opacity:0,
+  
 })
