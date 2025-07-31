@@ -40,3 +40,9 @@
     @apply text-white font-PPMori
   }
 }
+
+@layer components{
+  .img-round{
+    @apply rounded-3xl
+  }
+}

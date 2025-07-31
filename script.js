@@ -120,7 +120,10 @@ tl3.to("#page3",{
 })
 
 
-tl3.from("#page3 img",{
-  opacity:0,
-  
+console.log( );
+document.querySelectorAll("#page3 img").forEach((img)=>{
+  img.classList.add("img-round")
 })
+
+
+
