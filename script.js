@@ -47,15 +47,21 @@ locomotiveScrollInit()
 //   }
 
 // })
-
+gsap.from("#page1 h1,#page1 h2", {
+   
+  rotate: 15,
+  opacity: 0,
+  delay: 0.2,
+  duration: 0.7
+})
 
 var tl=gsap.timeline({
   scrollTrigger:{
     trigger:"#page1 h1",
     scroller:"#main",
-    start:"top 20%",
-    end:"top 0%",
-    markers:false,
+    start:"50% 20%",
+    end:"50% 10%",
+    markers:true,
     scrub:2
   }
 
@@ -81,7 +87,7 @@ var tl2=gsap.timeline({
     scroller:"#main",
     start:"bottom 50%",
     end:"bottom 40%",
-    markers:true,
+    markers:false,
     scrub:2
   }
 
