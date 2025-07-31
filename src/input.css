@@ -46,3 +46,15 @@
     @apply rounded-3xl
   }
 }
+
+@layer components{
+  .cursor-default{
+    @apply fixed w-[12px] h-[12px] rounded-full z-50 bg-green-600
+  }
+}
+
+@layer components{
+  .cursorvideo{
+    @apply fixed p-0.5 rounded-xl z-50 text-white bg-green-500 font-bold text-[15px]
+  }
+}
