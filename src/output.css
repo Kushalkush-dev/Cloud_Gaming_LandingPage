@@ -374,7 +374,7 @@
     font-size: 15px;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    color: var(--color-white);
+    color: var(--color-black);
   }
 }
 @property --tw-translate-x {

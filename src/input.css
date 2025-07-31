@@ -55,6 +55,6 @@
 
 @layer components{
   .cursorvideo{
-    @apply fixed p-0.5 rounded-xl z-50 text-white bg-green-500 font-bold text-[15px]
+    @apply fixed p-0.5 rounded-xl z-50 text-black bg-green-500 font-bold text-[15px]
   }
 }
