@@ -51,23 +51,43 @@ locomotiveScrollInit()
 
 var tl=gsap.timeline({
   scrollTrigger:{
-    trigger:"#main h1",
+    trigger:"#page1 h1",
     scroller:"#main",
     start:"top 20%",
     end:"top 0%",
+    markers:false,
+    scrub:2
+  }
+
+})
+
+tl.to("#page1 h1",{
+  x:-100
+},"head")
+tl.to("#page1 h2",{
+  x:100
+},"head")
+
+tl.to("#page1 video",{
+  width:"95%"
+},"head")
+
+
+
+
+var tl2=gsap.timeline({
+  scrollTrigger:{
+    trigger:"#page1",
+    scroller:"#main",
+    start:"bottom 50%",
+    end:"bottom 40%",
     markers:true,
     scrub:2
   }
 
 })
 
-tl.to("#main page h1",{
-  x:-100
-},"head")
-tl.to("#main h2",{
-  x:100
-},"head")
 
-tl.to("#main video",{
-  width:"95%"
-},"head")
+tl2.to("#page2",{
+  backgroundColor:"#fff"
+})
