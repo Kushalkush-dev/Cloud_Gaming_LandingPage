@@ -60,7 +60,7 @@ var tl=gsap.timeline({
     trigger:"#page1 h1",
     scroller:"#main",
     start:"50% 20%",
-    end:"50% 10%",
+    end:"50% 0%",
     markers:true,
     scrub:2
   }
