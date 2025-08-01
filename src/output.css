@@ -195,6 +195,9 @@
   .top-\[30vw\] {
     top: 30vw;
   }
+  .top-\[32vw\] {
+    top: 32vw;
+  }
   .top-\[35vw\] {
     top: 35vw;
   }
@@ -206,6 +209,9 @@
   }
   .right-\[3vw\] {
     right: 3vw;
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -261,6 +267,9 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
@@ -303,6 +312,13 @@
   .w-screen {
     width: 100vw;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -319,6 +335,9 @@
   }
   .cursor-default {
     cursor: default;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -347,6 +366,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -354,14 +377,23 @@
   .border-b-black {
     border-bottom-color: var(--color-black);
   }
+  .border-b-white {
+    border-bottom-color: var(--color-white);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -403,8 +435,15 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -542,6 +581,11 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -566,6 +610,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-font-weight: initial;
