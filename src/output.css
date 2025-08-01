@@ -197,6 +197,9 @@
   .-top-\[50vw\] {
     top: calc(50vw * -1);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-\[-50\%\] {
     top: -50%;
   }
@@ -205,6 +208,9 @@
   }
   .top-\[-120\%\] {
     top: -120%;
+  }
+  .top-\[5vw\] {
+    top: 5vw;
   }
   .top-\[10vw\] {
     top: 10vw;
@@ -229,6 +235,9 @@
   }
   .top-\[35vw\] {
     top: 35vw;
+  }
+  .top-\[36vw\] {
+    top: 36vw;
   }
   .top-\[40vw\] {
     top: 40vw;
@@ -359,11 +368,20 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-\[10vw\] {
+    width: 10vw;
+  }
   .w-\[15vw\] {
     width: 15vw;
   }
+  .w-\[18vw\] {
+    width: 18vw;
+  }
   .w-\[20vw\] {
     width: 20vw;
+  }
+  .w-\[22vw\] {
+    width: 22vw;
   }
   .w-\[25vw\] {
     width: 25vw;
