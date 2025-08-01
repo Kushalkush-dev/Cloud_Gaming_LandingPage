@@ -120,10 +120,21 @@ tl3.to("#page3",{
 })
 
 
-console.log( );
 document.querySelectorAll("#page3 img").forEach((img)=>{
   img.classList.add("img-round")
 })
+
+document.querySelectorAll("#page4 img").forEach((img)=>{
+  img.classList.add("img-round")
+})
+
+
+document.querySelectorAll("#page4 h1").forEach((h1)=>{
+  h1.classList.add("page4headstyle")
+})
+
+
+
 
 
 

@@ -61,12 +61,12 @@
 
 
 
-@layer components {
-  .will-change-transform {
-    will-change: transform;
+
+@layer components{
+  .page4headstyle{
+    @apply text-white font-PPMori
   }
 }
-
 
 
 
