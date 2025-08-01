@@ -128,51 +128,51 @@ document.querySelectorAll("#page3 img").forEach((img)=>{
 
 
 
-const cursor=document.querySelector("#cursor")
+// const cursor=document.querySelector("#cursor")
 
-const main=document.querySelector("#main")
+// const main=document.querySelector("#main")
 
-let targetX = 0;
-let targetY = 0;
-let currentX = 0;
-let currentY = 0;
+// let targetX = 0;
+// let targetY = 0;
+// let currentX = 0;
+// let currentY = 0;
 
-main.addEventListener("mousemove", (e) => {
-  targetX = e.clientX;
-  targetY = e.clientY;
-});
+// main.addEventListener("mousemove", (e) => {
+//   targetX = e.clientX;
+//   targetY = e.clientY;
+// });
 
-function smoothFollow() {
+// function smoothFollow() {
  
-  currentX += (targetX - currentX) * 0.3;
-  currentY += (targetY - currentY) * 0.3;
+//   currentX += (targetX - currentX) * 0.3;
+//   currentY += (targetY - currentY) * 0.3;
 
-  cursor.style.left = currentX + "px";
-  cursor.style.top = currentY + "px";
+//   cursor.style.left = currentX + "px";
+//   cursor.style.top = currentY + "px";
 
-  requestAnimationFrame(smoothFollow);
-}
+//   requestAnimationFrame(smoothFollow);
+// }
 
-smoothFollow(); 
-
-
+// smoothFollow(); 
 
 
-document.querySelector("#page1 video").addEventListener("mouseover",()=>{
-  cursor.classList.remove("cursor-style")
-  cursor.textContent="GameON"
-  cursor.classList.add("cursorvideo")  
+
+
+// document.querySelector("#page1 video").addEventListener("mouseover",()=>{
+//   cursor.classList.remove("cursor-style")
+//   cursor.textContent="GameON"
+//   cursor.classList.add("cursorvideo")  
   
 
-})
+// })
 
 
 
 
-document.querySelector("#page1 video").addEventListener("mouseout",()=>{
-  cursor.textContent=" "
-  cursor.classList.remove("cursorvideo")
-  cursor.classList.add("cursor-style")  
+// document.querySelector("#page1 video").addEventListener("mouseout",()=>{
+//   cursor.textContent=" "
+//   cursor.classList.remove("cursorvideo")
+//   cursor.classList.add("cursor-style")  
   
 
-})
+// })

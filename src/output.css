@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
@@ -177,6 +179,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -186,8 +191,11 @@
   .relative {
     position: relative;
   }
-  .right-5 {
-    right: calc(var(--spacing) * 5);
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .left-1 {
     left: calc(var(--spacing) * 1);
@@ -222,9 +230,6 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .mb-\[10vw\] {
-    margin-bottom: 10vw;
-  }
   .ml-\[1vw\] {
     margin-left: 1vw;
   }
@@ -249,17 +254,14 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-\[6vw\] {
+    height: 6vw;
+  }
   .h-\[40vh\] {
     height: 40vh;
   }
   .min-h-\[90vh\] {
     min-height: 90vh;
-  }
-  .min-h-\[100vh\] {
-    min-height: 100vh;
-  }
-  .min-h-\[120vh\] {
-    min-height: 120vh;
   }
   .min-h-\[140vh\] {
     min-height: 140vh;
@@ -333,13 +335,6 @@
   .gap-\[10vw\] {
     gap: 10vw;
   }
-  .space-y-12 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -359,6 +354,12 @@
   }
   .border-b-black {
     border-bottom-color: var(--color-black);
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -381,8 +382,8 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
-  .p-\[100px\] {
-    padding: 100px;
+  .p-\[150px\] {
+    padding: 150px;
   }
   .font-PPMori {
     font-family: var(--font-PPMori);
@@ -437,6 +438,9 @@
   .ease-out {
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
+  }
+  .will-change-transform {
+    will-change: transform;
   }
   .group-hover\:-translate-y-full {
     &:is(:where(.group):hover *) {
@@ -515,6 +519,11 @@
     color: var(--color-black);
   }
 }
+@layer components {
+  .will-change-transform {
+    will-change: transform;
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -550,11 +559,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -588,7 +592,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-outline-style: solid;
       --tw-duration: initial;

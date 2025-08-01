@@ -58,3 +58,15 @@
     @apply fixed p-0.5 rounded-xl z-50 text-black bg-green-500 font-bold text-[15px]
   }
 }
+
+
+
+@layer components {
+  .will-change-transform {
+    will-change: transform;
+  }
+}
+
+
+
+
