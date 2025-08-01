@@ -48,7 +48,7 @@
 }
 
 @layer components{
-  .cursor-default{
+  .cursor-style{
     @apply fixed w-[12px] h-[12px] rounded-full z-50 bg-green-600
   }
 }

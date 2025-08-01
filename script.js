@@ -159,7 +159,7 @@ smoothFollow();
 
 
 document.querySelector("#page1 video").addEventListener("mouseover",()=>{
-  cursor.classList.remove("cursor-default")
+  cursor.classList.remove("cursor-style")
   cursor.textContent="GameON"
   cursor.classList.add("cursorvideo")  
   
@@ -172,7 +172,7 @@ document.querySelector("#page1 video").addEventListener("mouseover",()=>{
 document.querySelector("#page1 video").addEventListener("mouseout",()=>{
   cursor.textContent=" "
   cursor.classList.remove("cursorvideo")
-  cursor.classList.add("cursor-default")  
+  cursor.classList.add("cursor-style")  
   
 
 })
