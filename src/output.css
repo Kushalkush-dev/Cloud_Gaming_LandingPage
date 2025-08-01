@@ -191,8 +191,53 @@
   .relative {
     position: relative;
   }
+  .-top-\[50\%\] {
+    top: calc(50% * -1);
+  }
+  .-top-\[50vw\] {
+    top: calc(50vw * -1);
+  }
+  .top-\[-50\%\] {
+    top: -50%;
+  }
+  .top-\[-90\%\] {
+    top: -90%;
+  }
+  .top-\[-120\%\] {
+    top: -120%;
+  }
+  .top-\[15vw\] {
+    top: 15vw;
+  }
+  .top-\[17vw\] {
+    top: 17vw;
+  }
+  .top-\[20\%\] {
+    top: 20%;
+  }
+  .top-\[20vw\] {
+    top: 20vw;
+  }
+  .top-\[50\%\] {
+    top: 50%;
+  }
+  .top-\[120\%\] {
+    top: 120%;
+  }
+  .top-\[200\%\] {
+    top: 200%;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .-left-1 {
+    left: calc(var(--spacing) * -1);
+  }
+  .-left-1\/6 {
+    left: calc(calc(1/6 * 100%) * -1);
+  }
+  .-left-\[10\%\] {
+    left: calc(10% * -1);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -205,6 +250,21 @@
   }
   .left-5 {
     left: calc(var(--spacing) * 5);
+  }
+  .isolate {
+    isolation: isolate;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
   }
   .z-50 {
     z-index: 50;
@@ -262,6 +322,9 @@
   }
   .min-h-\[90vh\] {
     min-height: 90vh;
+  }
+  .min-h-\[110vh\] {
+    min-height: 110vh;
   }
   .min-h-\[140vh\] {
     min-height: 140vh;
