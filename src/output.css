@@ -206,6 +206,9 @@
   .top-\[-120\%\] {
     top: -120%;
   }
+  .top-\[10vw\] {
+    top: 10vw;
+  }
   .top-\[15vw\] {
     top: 15vw;
   }
@@ -218,6 +221,18 @@
   .top-\[20vw\] {
     top: 20vw;
   }
+  .top-\[30vw\] {
+    top: 30vw;
+  }
+  .top-\[32vw\] {
+    top: 32vw;
+  }
+  .top-\[35vw\] {
+    top: 35vw;
+  }
+  .top-\[40vw\] {
+    top: 40vw;
+  }
   .top-\[50\%\] {
     top: 50%;
   }
@@ -229,6 +244,9 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-\[3vw\] {
+    right: 3vw;
   }
   .-left-1 {
     left: calc(var(--spacing) * -1);
@@ -250,6 +268,15 @@
   }
   .left-5 {
     left: calc(var(--spacing) * 5);
+  }
+  .left-\[3vw\] {
+    left: 3vw;
+  }
+  .left-\[5vw\] {
+    left: 5vw;
+  }
+  .left-\[10\%\] {
+    left: 10%;
   }
   .isolate {
     isolation: isolate;
@@ -331,6 +358,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-\[15vw\] {
+    width: 15vw;
   }
   .w-\[20vw\] {
     width: 20vw;
