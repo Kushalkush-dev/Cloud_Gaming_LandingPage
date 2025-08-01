@@ -43,7 +43,7 @@
 
 @layer components{
   .img-round{
-    @apply rounded-3xl
+    @apply rounded-xl
   }
 }
 
