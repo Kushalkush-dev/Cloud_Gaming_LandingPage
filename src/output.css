@@ -396,6 +396,15 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .p-\[2vw\] {
+    padding: 2vw;
+  }
+  .p-\[5vw\] {
+    padding: 5vw;
+  }
+  .p-\[10vw\] {
+    padding: 10vw;
+  }
   .p-\[20vw\] {
     padding: 20vw;
   }
@@ -429,11 +438,20 @@
   .text-\[4vw\] {
     font-size: 4vw;
   }
+  .text-\[5vw\] {
+    font-size: 5vw;
+  }
   .text-\[6\.5vw\] {
     font-size: 6.5vw;
   }
   .text-\[6vw\] {
     font-size: 6vw;
+  }
+  .text-\[7vw\] {
+    font-size: 7vw;
+  }
+  .text-\[20vw\] {
+    font-size: 20vw;
   }
   .text-white {
     color: var(--color-white);
