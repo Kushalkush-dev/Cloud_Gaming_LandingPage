@@ -282,6 +282,9 @@
   .h-\[40vh\] {
     height: 40vh;
   }
+  .min-h-\[20vh\] {
+    min-height: 20vh;
+  }
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
@@ -395,6 +398,9 @@
   }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
