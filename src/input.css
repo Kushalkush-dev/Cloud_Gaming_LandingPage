@@ -47,17 +47,18 @@
   }
 }
 
-@layer components{
-  .cursor-style{
-    @apply fixed w-[12px] h-[12px] rounded-full z-50 bg-green-600
+ @layer components{
+  .cursor-blank{
+    @apply fixed pointer-events-none z-50 transition-all duration-100 ease-linear
   }
-}
+ }
 
-@layer components{
-  .cursorvideo{
-    @apply fixed p-0.5 rounded-xl z-50 text-black bg-green-500 font-bold text-[15px]
+  @layer components{
+  .cursor-collection{
+    @apply fixed  w-[27vw] h-[27vh] z-50 bg-contain bg-no-repeat bg-center rounded-lg  
   }
-}
+ }
+
 
 
 

@@ -137,53 +137,45 @@ document.querySelectorAll("#page4 h1").forEach((h1)=>{
 
 
 
+const cursor=document.getElementById("cursor")
+const page5=document.getElementById("page5")
 
 
-// const cursor=document.querySelector("#cursor")
+page5.addEventListener("mousemove",(dest)=>{
 
-// const main=document.querySelector("#main")
-
-// let targetX = 0;
-// let targetY = 0;
-// let currentX = 0;
-// let currentY = 0;
-
-// main.addEventListener("mousemove", (e) => {
-//   targetX = e.clientX;
-//   targetY = e.clientY;
-// });
-
-// function smoothFollow() {
+ cursor.style.left=dest.clientX+"px"
+ cursor.style.top=dest.clientY+"px"
  
-//   currentX += (targetX - currentX) * 0.3;
-//   currentY += (targetY - currentY) * 0.3;
-
-//   cursor.style.left = currentX + "px";
-//   cursor.style.top = currentY + "px";
-
-//   requestAnimationFrame(smoothFollow);
-// }
-
-// smoothFollow(); 
 
 
 
 
-// document.querySelector("#page1 video").addEventListener("mouseover",()=>{
-//   cursor.classList.remove("cursor-style")
-//   cursor.textContent="GameON"
-//   cursor.classList.add("cursorvideo")  
-  
-
-// })
+})
 
 
 
 
-// document.querySelector("#page1 video").addEventListener("mouseout",()=>{
-//   cursor.textContent=" "
-//   cursor.classList.remove("cursorvideo")
-//   cursor.classList.add("cursor-style")  
-  
 
-// })
+
+
+
+
+const collection=document.querySelectorAll("#collection")
+ collection.forEach((elem)=>{
+  elem.addEventListener("mouseenter",()=>{
+   let img=elem.getAttribute("data-image")
+
+   cursor.classList.add("cursor-collection")
+   cursor.style.backgroundImage=`url(${img})`
+
+    
+  })
+
+
+  elem.addEventListener("mouseleave",()=>{
+    cursor.classList.remove("cursor-collection")
+    
+
+  })
+
+ })
