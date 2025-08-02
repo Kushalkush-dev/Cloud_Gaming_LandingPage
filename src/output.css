@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
@@ -234,6 +235,9 @@
   .-mt-\[19px\] {
     margin-top: calc(19px * -1);
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -249,8 +253,23 @@
   .mt-\[17vh\] {
     margin-top: 17vh;
   }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-\[5vw\] {
+    margin-bottom: 5vw;
+  }
+  .mb-\[10vw\] {
+    margin-bottom: 10vw;
   }
   .ml-\[1vw\] {
     margin-left: 1vw;
@@ -276,14 +295,26 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-\[20vh\] {
+    height: 20vh;
+  }
+  .h-\[30vh\] {
+    height: 30vh;
+  }
   .h-\[40vh\] {
     height: 40vh;
+  }
+  .min-h-\[80vh\] {
+    min-height: 80vh;
   }
   .min-h-\[90vh\] {
     min-height: 90vh;
   }
   .min-h-\[110vh\] {
     min-height: 110vh;
+  }
+  .min-h-\[120vh\] {
+    min-height: 120vh;
   }
   .min-h-\[140vh\] {
     min-height: 140vh;
@@ -370,15 +401,22 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .border-t-white {
+    border-top-color: var(--color-white);
+  }
   .border-b-black {
     border-bottom-color: var(--color-black);
   }
-  .border-b-white {
-    border-bottom-color: var(--color-white);
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -400,6 +438,9 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .p-\[20vw\] {
+    padding: 20vw;
   }
   .p-\[150px\] {
     padding: 150px;
@@ -423,11 +464,23 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-\[2vw\] {
+    font-size: 2vw;
+  }
+  .text-\[4vw\] {
+    font-size: 4vw;
+  }
+  .text-\[5vw\] {
+    font-size: 5vw;
+  }
   .text-\[6\.5vw\] {
     font-size: 6.5vw;
   }
   .text-\[6vw\] {
     font-size: 6vw;
+  }
+  .text-\[10vw\] {
+    font-size: 10vw;
   }
   .text-green-500 {
     color: var(--color-green-500);
