@@ -1,1 +1,1 @@
-A Modern Site based on cloud gaming website
+A Modern Site based on cloud gaming website with animation and transition using gsap and locomotive
